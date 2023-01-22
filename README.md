@@ -4,7 +4,7 @@
 ### Sumário
 🔹 [Arquivos de Instalação](#arquivos-de-instalação)
 
-🔹 [Versionamento](#versionamento)
+🔹 [Instalação](#instalação)
 
 🔹 [Pré-requisitos](#pré-requisitos)
 
@@ -27,7 +27,11 @@
 (<a href="https://tomcat.apache.org/download-10.cgi">TOMCAT10</a>)
 </p>
 
-## Versionamento
+
+## Instalação
+<p align="justify">
+Instale os arquivos apenas avançando os passos
+</p>
 
 
 
