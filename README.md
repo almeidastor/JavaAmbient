@@ -32,8 +32,8 @@
 <p align="justify">
 Instale os arquivos apenas avançando os passos
 
-Configurações para instalação do TOMCAT
- <p align="center"><img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/configtomcat.png"></p>
+ <p align="center"> Configurações para instalação do TOMCAT
+<img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/configtomcat.png"></p>
 
 </p>
 
