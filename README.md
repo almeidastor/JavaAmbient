@@ -13,7 +13,7 @@ Agradeço profundamente pelo material postado.
 
 🔹 [Configurando TOMCAT E NETBEANS](#configurando-TOMCAT-E-NETBEANS)
 
-🔹 [Testes](#teste)
+🔹 [Testes](#testes)
 
 
 
@@ -107,13 +107,15 @@ Então na opção de "Server" clique com o botão direito em "Start" e permita a
   ## Testes
 
   <h3>TomCat</h3>
+
+  Em NetBeans:
   File > New Project > Java With Maven > Web Application
 
  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/webtest.png"></p>
 
  Espere o carregamento do servidor e escolha a opção Index.html que está na pasta Web Pages do projeto
 
-  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/webtest.png"></p>
+  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/webtest2.png"></p>
 
   Então execute o Código no Netbeans
 
@@ -146,3 +148,30 @@ INSERT INTO `bebidas` (`idBebida`, `nome`, `tipo`) VALUES
 (8, 'Suco de Uva', 'Sucos Naturais'),
 (9, 'Chocolate Quente', 'Cafés'),
 (10, 'Guaraná', 'Refrigerantes');
+
+ Em NetBeans (PHP):
+
+File > New Project > PHP > PHP Application > Next > Next > Finish
+
+ <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/webtest3.png"></p>
+
+ após selecionar a página index.php, localize o começo de bloco do código de php, coloque:
+        <?php
+        $host = "localhost";
+        $user = "fatec";
+        $pass = "aulafatec";
+        $banco = "bd_cafe_fatec";
+        
+        $conexao = mysqli_connect($host, $user, $pass) or die ("Erro ao conectar");
+        $bd = mysqli_select_db($conexao, $banco) or die ("Erro ao escolher bd");
+        
+        $qry = "SELECT * FROM bebidas ORDER BY tipo, nome";
+        
+        $sqlExec = mysqli_query($conexao, $qry) or die (mysqli_error($conexao));
+        
+        while ($linha = mysqli_fetch_assoc($sqlExec)){
+            echo $linha['idBebida']." - ". utf8_encode($linha['nome'])
+                    ."(". utf8_encode($linha['tipo']).")<br/>";
+        }
+        ?>
+    
