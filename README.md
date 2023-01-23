@@ -11,7 +11,7 @@ Agradeço profundamente pelo material postado.
 
 🔹 [Configuração TOMCAT](#configuração-TOMCAT)
 
-🔹 [Rodando a aplicação](#rodando-a-aplicação)
+🔹 [Configurando TOMCAT E NETBEANS](#Configurando-TOMCAT-E-NETBEANS)
 
 🔹 [Telas](#telas)
 
@@ -36,6 +36,8 @@ Agradeço profundamente pelo material postado.
 Instale os arquivos apenas avançando os passos
 </p>
 
+<H2>TomCat</H2>
+
  <p align="center"> Configurações para instalação do TOMCAT </p>
 <p align="center"> User Name: admin</p>
  <p align="center"> Password: admin</p>
@@ -51,6 +53,8 @@ No Menu Iniciar, procure na lista por uma pasta chamada "Apache Tomcat 10.0 Tomc
  Você pode testar se o servidor conectou através do endereço <a href="http://localhost:8089/">localhost:8089</a>
 
 
+## Configurando TOMCAT E NETBEANS
+
  Abra o NetBeans e procure a aba "Services" a opção de "Server" e em cima da opção, clique com botão direito do mouse em "Add Server"
 <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/confnettom.png"></p>
 
@@ -63,20 +67,29 @@ A proxima opção a exibir seria para instanciar o Servidor
 - Na opção de "Server Location" localize o caminho C:\Program Files\Apache Software Foundation\Tomcat 10.0
 - Para a opção das credenciais, pare a execução do servidor (opção "Stop" em "Monitor Tomcat") e entre no diretório C:\Program Files\Apache Software Foundation\Tomcat 10.0\conf\
 - Localize o arquivo "tomcat-users" e abra no bloco de notas
-- Antes de "</tomcat-users>" cole o bloco
+- Antes de "</tomcat-users>" cole o bloco abaixo e salve
   <role rolename="manager-script"/>
   <user username="netbeans" password="netbeans" roles="manager-script"/>
 <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/rolebloque.png"></p>
 
+- Atualize as credenciais
+<p align="center"> Server Location: C:\Program Files\Apache Software Foundation\Tomcat 10.0</p>
+<p align="center"> User Name: netbeans</p>
+ <p align="center"> Password: netbeans</p>
 
+ <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/instancenet.png"></p>
 
+E Vá na opção "Finish"
 
+Então na opção de "Server" clique com o botão direito em "Start" e permita alguns acessos se necessário
+ <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/netbenasaccss.png"></p>
 
+ Caso novamente peça senha, utilize as credenciais 
+ User Name: netbeans
+ Password: netbeans
 
+ Esse mecanismo dá o poder ao Netbeans de iniciar o Servidor (Cuidado ao iniciar pelo Netbeans e pelo Monitos porque podem dar conflito)
 
-
-
-## Rodando a aplicação
 
   
 
