@@ -78,9 +78,9 @@ A proxima opção a exibir seria para instanciar o Servidor
 - Para a opção das credenciais, pare a execução do servidor (opção "Stop" em "Monitor Tomcat") e entre no diretório C:\Program Files\Apache Software Foundation\Tomcat 10.0\conf\
 - Localize o arquivo "tomcat-users" e abra no bloco de notas
 - Antes de "</tomcat-users>" cole o bloco abaixo e salve
-  <role rolename="manager-script"/>
-  <user username="netbeans" password="netbeans" roles="manager-script"/>
-<p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/rolebloque.png"></p>
+  <code><role rolename="manager-script"/>
+  <user username="netbeans" password="netbeans" roles="manager-script"/>"
+<p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/rolebloque.png"></p></code>
 
 - Atualize as credenciais
 <p align="center"> Server Location: C:\Program Files\Apache Software Foundation\Tomcat 10.0</p>
