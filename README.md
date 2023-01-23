@@ -13,7 +13,7 @@ Agradeço profundamente pelo material postado.
 
 🔹 [Configurando TOMCAT E NETBEANS](#Configurando-TOMCAT-E-NETBEANS)
 
-🔹 [Telas](#telas)
+
 
 
 ## Arquivos de Instalação 
@@ -43,6 +43,16 @@ Instale os arquivos apenas avançando os passos
  <p align="center"> Password: admin</p>
  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/configtomcat.png"></p>
 
+
+ <H2>Xampp</H2>
+ Deixar apenas as opções de "MySQL" "Perl" e "phpMyAdmin" e avance as etapas
+<p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/xampconfig.png"></p>
+
+No painel principal, inicie as opções de Apache e MySQL e permita o acessos se necessário
+<p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/xampconfig2.png"></p>
+
+ Você pode testar se o servidor conectou através do endereço <a href="http://localhost/">localhost</a>
+ O banco de dados pode ser usado em  <a href="https://localhost/phpmyadmin/">phpmyadmin</a>
 
 
 ## Configuração TOMCAT
@@ -84,14 +94,12 @@ E Vá na opção "Finish"
 Então na opção de "Server" clique com o botão direito em "Start" e permita alguns acessos se necessário
  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/netbenasaccss.png"></p>
 
- Caso novamente peça senha, utilize as credenciais 
- User Name: netbeans
- Password: netbeans
+ <p>Caso novamente peça senha, utilize as credenciais </p>
+ <p>User Name: netbeans</p>
+ <p>Password: netbeans</p>
 
- Esse mecanismo dá o poder ao Netbeans de iniciar o Servidor (Cuidado ao iniciar pelo Netbeans e pelo Monitos porque podem dar conflito)
+ <p>Esse mecanismo dá o poder ao Netbeans de iniciar o Servidor (Cuidado ao iniciar pelo Netbeans e pelo Monitor porque podem dar conflito)
 
 
   
-
-## Telas
 
