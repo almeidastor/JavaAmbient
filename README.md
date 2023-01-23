@@ -39,8 +39,8 @@ Instale os arquivos apenas avançando os passos
 <H2>TomCat</H2>
 
  <p align="center"> Configurações para instalação do TOMCAT </p>
-<p align="center"> User Name: admin</p>
- <p align="center"> Password: admin</p>
+-<p align="center"> User Name: admin</p>
+ -<p align="center"> Password: admin</p>
  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/configtomcat.png"></p>
 
 
