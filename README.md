@@ -11,7 +11,10 @@ Agradeço profundamente pelo material postado.
 
 🔹 [Configuração TOMCAT](#configuração-TOMCAT)
 
-🔹 [Configurando TOMCAT E NETBEANS](#Configurando-TOMCAT-E-NETBEANS)
+🔹 [Configurando TOMCAT E NETBEANS](#configurando-TOMCAT-E-NETBEANS)
+
+🔹 [Testes](#teste)
+
 
 
 
@@ -36,15 +39,15 @@ Agradeço profundamente pelo material postado.
 Instale os arquivos apenas avançando os passos
 </p>
 
-<H2>TomCat</H2>
+<H3>TomCat</H3>
 
  <p align="center"> Configurações para instalação do TOMCAT </p>
--<p align="center"> User Name: admin</p>
- -<p align="center"> Password: admin</p>
+<p align="center"> User Name: admin</p>
+ <p align="center"> Password: admin</p>
  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/configtomcat.png"></p>
 
 
- <H2>Xampp</H2>
+ <h3>Xampp</H3>
  Deixar apenas as opções de "MySQL" "Perl" e "phpMyAdmin" e avance as etapas
 <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/xampconfig.png"></p>
 
@@ -101,5 +104,45 @@ Então na opção de "Server" clique com o botão direito em "Start" e permita a
  <p>Esse mecanismo dá o poder ao Netbeans de iniciar o Servidor (Cuidado ao iniciar pelo Netbeans e pelo Monitor porque podem dar conflito)
 
 
-  
+  ## Testes
 
+  <h3>TomCat</h3>
+  File > New Project > Java With Maven > Web Application
+
+ <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/webtest.png"></p>
+
+ Espere o carregamento do servidor e escolha a opção Index.html que está na pasta Web Pages do projeto
+
+  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/webtest.png"></p>
+
+  Então execute o Código no Netbeans
+
+    <h3>Xampp</h3>
+- Acesse  <a href="https://localhost/phpmyadmin/">phpmyadmin</a>
+- Então crie um banco de dados de nome "bd_cafe_fatec" em "utf8_general_ci" 
+- Cole o seguinte bloco de código na opção de SQL:
+
+USE bd_cafe_fatec;
+CREATE USER 'fatec'@'localhost' Identified by 'aulafatec';
+GRANT ALL PRIVILEGES ON bd_cafe_fatec.* TO 'fatec'@'localhost';
+FLUSH PRIVILEGES;
+
+CREATE TABLE `bebidas` (
+  `idBebida` int(5) NOT NULL,
+  `nome` varchar(50) NOT NULL,
+  `tipo` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+ALTER TABLE `bebidas`
+  ADD PRIMARY KEY (`idBebida`);
+
+INSERT INTO `bebidas` (`idBebida`, `nome`, `tipo`) VALUES
+(1, 'Café Espresso', 'Cafés'),
+(2, 'Mocca Latte', 'Cafés'),
+(3, 'Capuccino', 'Cafés'),
+(5, 'Coca-cola', 'Refrigerantes'),
+(7, 'Suco de Laranja', 'Sucos Naturais'),
+(8, 'Suco de Uva', 'Sucos Naturais'),
+(9, 'Chocolate Quente', 'Cafés'),
+(10, 'Guaraná', 'Refrigerantes');
