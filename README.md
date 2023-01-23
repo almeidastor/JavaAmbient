@@ -1,5 +1,8 @@
 # Instalação e configuração para Desenvolvimento Java Netbeans/Xampp/Tomcat
 
+<p align="justify"> Tutorial adaptado do Video <a href="https://www.youtube.com/watch?v=1zaKXUH1XXU">"Configuração da IDE Netbeans Apache para desenvolvimento Java / PHP com MySQL"</a> de Anderson Pazin.
+Agradeço profundamente pelo material postado.
+
 
 ### Sumário
 🔹 [Arquivos de Instalação](#arquivos-de-instalação)
@@ -46,6 +49,31 @@ No Menu Iniciar, procure na lista por uma pasta chamada "Apache Tomcat 10.0 Tomc
  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/apacheconf2.png"></p>
 
  Você pode testar se o servidor conectou através do endereço <a href="http://localhost:8089/">localhost:8089</a>
+
+
+ Abra o NetBeans e procure a aba "Services" a opção de "Server" e em cima da opção, clique com botão direito do mouse em "Add Server"
+<p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/confnettom.png"></p>
+
+
+  Então escolha a opção "Apache Tomcat ou TomEE" e avance as opções
+<p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/apaEEopt.png"></p>
+
+A proxima opção a exibir seria para instanciar o Servidor
+
+- Na opção de "Server Location" localize o caminho C:\Program Files\Apache Software Foundation\Tomcat 10.0
+- Para a opção das credenciais, pare a execução do servidor (opção "Stop" em "Monitor Tomcat") e entre no diretório C:\Program Files\Apache Software Foundation\Tomcat 10.0\conf\
+- Localize o arquivo "tomcat-users" e abra no bloco de notas
+- Antes de "</tomcat-users>" cole o bloco
+  <role rolename="manager-script"/>
+  <user username="netbeans" password="netbeans" roles="manager-script"/>
+<p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/rolebloque.png"></p>
+
+
+
+
+
+
+
 
 
 ## Rodando a aplicação
