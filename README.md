@@ -34,9 +34,9 @@ Instale os arquivos apenas avançando os passos
 </p>
 
  <p align="center"> Configurações para instalação do TOMCAT </p>
- <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/configtomcat.png"></p>
- <p align="center"> User Name: admin</p>
+<p align="center"> User Name: admin</p>
  <p align="center"> Password: admin</p>
+ <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/configtomcat.png"></p>
 
 
 
@@ -45,7 +45,7 @@ No Menu Iniciar, procure na lista por uma pasta chamada "Apache Tomcat 10.0 Tomc
 
  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/apacheconf2.png"></p>
 
- Você pode testar se o servidor conectou através do endereço <a href="http://localhost:8089/">localhost:8089/</a>
+ Você pode testar se o servidor conectou através do endereço <a href="http://localhost:8089/">localhost:8089</a>
 
 
 ## Rodando a aplicação
