@@ -149,14 +149,14 @@ INSERT INTO `bebidas` (`idBebida`, `nome`, `tipo`) VALUES
 (9, 'Chocolate Quente', 'Cafés'),
 (10, 'Guaraná', 'Refrigerantes');
 
- Em NetBeans (PHP):
+ <h3>Em NetBeans (PHP): </h3>
 
 File > New Project > PHP > PHP Application > Next > Next > Finish
 
  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/webtest3.png"></p>
 
  após selecionar a página index.php, localize o começo de bloco do código de php, coloque:
-        <?php
+        <? php
         $host = "localhost";
         $user = "fatec";
         $pass = "aulafatec";
@@ -174,4 +174,22 @@ File > New Project > PHP > PHP Application > Next > Next > Finish
                     ."(". utf8_encode($linha['tipo']).")<br/>";
         }
         ?>
+
+ <h3>Em NetBeans (JAVA): </h3>
+
+ <p align="justify">
+<a href="https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.27">Baixar o Conector MySQL Java Maven</a>
+</p>
+
+File > New Project > Java With Maven > Java Application > Finish
+
+Na pasta Dependencies aperte com o botão direito e escolha a opção "Add Dependency" 
+groupId: mysql
+artifactId: mysql-connector-java
+version: 8.0.27
+
+e aperta com o botão direito e escolha a opção  "Manually install artifact" para escolher o arquivo baixado
+
+
+
     
