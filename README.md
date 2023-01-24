@@ -124,30 +124,30 @@ Então na opção de "Server" clique com o botão direito em "Start" e permita a
 - Então crie um banco de dados de nome "bd_cafe_fatec" em "utf8_general_ci" 
 - Cole o seguinte bloco de código na opção de SQL:
 
-    USE bd_cafe_fatec;
-    CREATE USER 'fatec'@'localhost' Identified by 'aulafatec';
-    GRANT ALL PRIVILEGES ON bd_cafe_fatec.* TO 'fatec'@'localhost';
-    FLUSH PRIVILEGES;
+        USE bd_cafe_fatec;
+        CREATE USER 'fatec'@'localhost' Identified by 'aulafatec';
+        GRANT ALL PRIVILEGES ON bd_cafe_fatec.* TO 'fatec'@'localhost';
+        FLUSH PRIVILEGES;
 
-    CREATE TABLE `bebidas` (
-    `idBebida` int(5) NOT NULL,
-    `nome` varchar(50) NOT NULL,
-    `tipo` varchar(50) NOT NULL
-    ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+        CREATE TABLE `bebidas` (
+        `idBebida` int(5) NOT NULL,
+        `nome` varchar(50) NOT NULL,
+        `tipo` varchar(50) NOT NULL
+        ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-    --
-    ALTER TABLE `bebidas`
-    ADD PRIMARY KEY (`idBebida`);
-  
-    INSERT INTO `bebidas` (`idBebida`, `nome`, `tipo`) VALUES
-    (1, 'Café Espresso', 'Cafés'),
-    (2, 'Mocca Latte', 'Cafés'),
-    (3, 'Capuccino', 'Cafés'),
-    (5, 'Coca-cola', 'Refrigerantes'),
-    (7, 'Suco de Laranja', 'Sucos Naturais'),
-    (8, 'Suco de Uva', 'Sucos Naturais'),
-    (9, 'Chocolate Quente', 'Cafés'),
-    (10, 'Guaraná', 'Refrigerantes');
+        --
+        ALTER TABLE `bebidas`
+        ADD PRIMARY KEY (`idBebida`);
+
+        INSERT INTO `bebidas` (`idBebida`, `nome`, `tipo`) VALUES
+        (1, 'Café Espresso', 'Cafés'),
+        (2, 'Mocca Latte', 'Cafés'),
+        (3, 'Capuccino', 'Cafés'),
+        (5, 'Coca-cola', 'Refrigerantes'),
+        (7, 'Suco de Laranja', 'Sucos Naturais'),
+        (8, 'Suco de Uva', 'Sucos Naturais'),
+        (9, 'Chocolate Quente', 'Cafés'),
+        (10, 'Guaraná', 'Refrigerantes');
 
  <h3>Em NetBeans (PHP): </h3>
 
