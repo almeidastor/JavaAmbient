@@ -156,6 +156,7 @@ File > New Project > PHP > PHP Application > Next > Next > Finish
  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/webtest3.png"></p>
 
  após selecionar a página index.php, localize o começo de bloco do código de php, coloque:
+        
         <? php
         $host = "localhost";
         $user = "fatec";
