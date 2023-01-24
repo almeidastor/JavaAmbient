@@ -156,7 +156,7 @@ File > New Project > PHP > PHP Application > Next > Next > Finish
  <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/webtest3.png"></p>
 
  após selecionar a página index.php, localize o começo de bloco do código de php, coloque:
-        
+
         <? php
         $host = "localhost";
         $user = "fatec";
@@ -184,10 +184,11 @@ File > New Project > PHP > PHP Application > Next > Next > Finish
 
 File > New Project > Java With Maven > Java Application > Finish
 
-Na pasta Dependencies aperte com o botão direito e escolha a opção "Add Dependency" 
-groupId: mysql
-artifactId: mysql-connector-java
-version: 8.0.27
+Na pasta Dependencies aperte com o botão direito e escolha a opção "Add Dependency"
+
+- groupId: mysql
+- artifactId: mysql-connector-java
+- version: 8.0.27
 
 e aperta com o botão direito e escolha a opção  "Manually install artifact" para escolher o arquivo baixado
 
