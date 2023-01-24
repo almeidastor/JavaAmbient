@@ -190,6 +190,36 @@ version: 8.0.27
 
 e aperta com o botão direito e escolha a opção  "Manually install artifact" para escolher o arquivo baixado
 
+Utilize o bloco de código abaixo na classe e execute... 
+    public static void main(String[] args) {
+        String host = "jdbc:mysql://localhost/";
+        String user = "fatec";
+        String pass = "aulafatec";
+        String banco = "bd_cafe_fatec";
+        String timeZone = "?userTimezone=true&serverTimezone=UTC";
+        
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con = DriverManager.getConnection(host + banco+timeZone, user, pass);
+            String sql = "SELECT * FROM bebidas ORDER BY tipo, nome";
+            PreparedStatement sta = con.prepareStatement(sql);
+            ResultSet rst =sta.executeQuery();
+            while(rst.next()){
+                System.out.println(rst.getInt("idBebida") + " - "
+                        + rst.getString("nome") + " ("+rst.getString("tipo")+")");
+            }
+        
+            
+        }catch (ClassNotFoundException ex){
+        System.out.println("Classe não encontrada - não carregou o driver");}
+        catch(SQLException ex){
+            System.out.println("Erro SQL" + ex);
+        }
+    }
+
+A conexão com o banco de dados foi estabelecida se o output mostrar os dados registrados no banco
+
+ <p align="center"> <img src="https://github.com/almeidastor/JavaAmbient/blob/main/imagens/bdtest1.png"></p>
 
 
     
