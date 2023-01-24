@@ -191,7 +191,8 @@ version: 8.0.27
 e aperta com o botão direito e escolha a opção  "Manually install artifact" para escolher o arquivo baixado
 
 Utilize o bloco de código abaixo na classe e execute... 
-    public static void main(String[] args) {
+
+        public static void main(String[] args) {
         String host = "jdbc:mysql://localhost/";
         String user = "fatec";
         String pass = "aulafatec";
